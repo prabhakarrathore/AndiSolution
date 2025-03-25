@@ -338,6 +338,7 @@ h4 {
 pre {
     font-size: 1rem;
     font-weight: 600;
+    width: 80%;
     flex-wrap: wrap;
     /* color: #4f46e5; */
 }
