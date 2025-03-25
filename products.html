@@ -5,86 +5,226 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Deploy Faster</title>
-   <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="container">
+            <img src="./logo.jpg" class="logo" alt="Logo">
+            <div class="menu">
+                <div class="hamburger" onclick="toggleMenu()">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
+                <ul class="nav-links">
+                    <li><a class="nav-item" href="/">Home</a></li>
+                    <li><a class="nav-item" href="products.html">Products & Services</a></li>
+                    <li><a class="nav-item" href="/marketing.html">Digital Marketing</a></li>
+                    <li><a class="nav-item" href="/cloud.html">Cloud Software</a></li>
+                    <li><a class="nav-item" href="/clients.html">Our Clients</a></li>
+                    <li><a class="nav-item" href="/partners.html">Our Partners</a></li>
+                    <li><a class="nav-item" href="/contact.html">Contact Us</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div id="moving-text">
+        <div class="con">
+            <h1>Freelancers/Franchise/Reseller Required in all major cities.</h1>
+            <div id="gola"></div>
+            <h1>Freelancers/Franchise/Reseller Required in all major cities.</h1>
+            <div id="gola"></div>
+            <h1>Freelancers/Franchise/Reseller Required in all major cities.</h1>
+            <div id="gola"></div>
+            <h1>Freelancers/Franchise/Reseller Required in all major cities.</h1>
+            <div id="gola"></div>
+            <h1>Freelancers/Franchise/Reseller Required in all major cities.</h1>
+            <div id="gola"></div>
+            <h1>Freelancers/Franchise/Reseller Required in all major cities.</h1>
+        </div>
+    </div>
+
+
+    <div class="scroll-container">
+        <div class="scroll-content">
+            <img src="banner1.png" alt="Image 1">
+            <img src="banner2.jpg" alt="Image 2">
+            <img src="banner1.png" alt="Image 1">
+            <img src="banner2.jpg" alt="Image 2">
+        </div>
+    </div>
+
     <section class="product-container">
         <h2 class="section-title">Our Products</h2>
-    
+
         <div class="grid-container">
-            <div class="grid-item large">
-                <img src="product1.jpg" alt="Website Development">
-                <h3>Responsive Website Designing & Development</h3>
-                <p>We develop all types of websites (Static, Dynamic, E-commerce) using creative ideas and the latest
-                    technology.</p>
-                <button class="btn">Request Demo / Get Quote</button>
+            <div class="grid-item">
+                <img class="product-img" src="product1.jpg" alt="Website Development">
+                <div class="details">
+                    <h4>Responsive Website Designing & Development</h4>
+                    <p>We develop all types of websites (Static, Dynamic, E-commerce) using creative ideas and the
+                        latest
+                        technology.</p>
+                    <button class="btn">Request Demo / Get Quote</button>
+                </div>
             </div>
 
-            <div class="grid-item small">
-                <img src="product2.png" alt="Software Development">
-                <h3>Software Development</h3>
-                <p>We conceive, develop, and support software using the latest technologies at economical prices.</p>
-                <button class="btn">Request Demo / Get Quote</button>
+            <div class="grid-item-rev">
+                <img class="product-img" src="product2.png" alt="Software Development">
+                <div class="details">
+                    <h4>Software Development</h4>
+                    <p>We conceive, develop, and support software using the latest technologies at economical prices.
+                    </p>
+                    <button class="btn">Request Demo / Get Quote</button>
+                </div>
             </div>
 
             <div class="grid-item">
-                <img src="product3.jpg" alt="Mobile App Development">
-                <h3>Mobile App Development</h3>
-                <p>We develop Android & iOS apps, including E-commerce and portal applications.</p>
-                <button class="btn">Request Demo / Get Quote</button>
+
+                <img class="product-img" src="product3.jpg" alt="Mobile App Development">
+                <div class="details">
+                    <h4>Mobile App Development</h4>
+                    <p>We develop Android & iOS apps, including E-commerce and portal applications.</p>
+                    <button class="btn">Request Demo / Get Quote</button>
+                </div>
+            </div>
+
+            <div class="grid-item-rev">
+                <img class="product-img" src="services1.jpg" alt="Bulk SMS">
+                <div class="details">
+
+                    <h4>Bulk SMS</h4>
+                    <p>Instant setup API Gateway for SMS, including promotional, transactional, and voice SMS.</p>
+                    <button class="btn">Request Demo / Get Quote</button>
+                </div>
             </div>
 
             <div class="grid-item">
-                <img src="services1.jpg" alt="Bulk SMS">
-                <h3>Bulk SMS</h3>
-                <p>Instant setup API Gateway for SMS, including promotional, transactional, and voice SMS.</p>
-                <button class="btn">Request Demo / Get Quote</button>
+                <img class="product-img" src="services3.jpg" alt="Toll-Free Number">
+                <div class="details">
+
+                    <h4>Toll-Free Number</h4>
+                    <p>Get a premium Toll-Free Number with IVR Greeting for seamless customer interaction.</p>
+                    <button class="btn">Request Demo / Get Quote</button>
+                </div>
+            </div>
+
+            <div class="grid-item-rev">
+                <img class="product-img" src="services4.png" alt="Short Code Service">
+                <div class="details">
+
+                    <h4>Short Code Service</h4>
+                    <p>Short codes for SMS and MMS with powerful tools to enhance messaging services.</p>
+                    <button class="btn">Request Demo / Get Quote</button>
+                </div>
             </div>
 
             <div class="grid-item">
-                <img src="services3.jpg" alt="Toll-Free Number">
-                <h3>Toll-Free Number</h3>
-                <p>Get a premium Toll-Free Number with IVR Greeting for seamless customer interaction.</p>
-                <button class="btn">Request Demo / Get Quote</button>
+                <img class="product-img" src="services5.png" alt="Missed Call Service">
+
+                <div class="details">
+
+                    <h4>Missed Call Service</h4>
+                    <p>Reliable missed call alerts service at an economic price with full data security.</p>
+                    <button class="btn">Request Demo / Get Quote</button>
+                </div>
+            </div>
+
+            <div class="grid-item-rev">
+                <img class="product-img" src="1.png" alt="WhatsApp Promotion Panel">
+
+                <div class="details">
+
+                    <h4>WhatsApp Promotion Panel</h4>
+                    <p>Best-in-class WhatsApp panel for business promotion and customer communication.</p>
+                    <button class="btn">Request Demo / Get Quote</button>
+                </div>
             </div>
 
             <div class="grid-item">
-                <img src="services4.png" alt="Short Code Service">
-                <h3>Short Code Service</h3>
-                <p>Short codes for SMS and MMS with powerful tools to enhance messaging services.</p>
-                <button class="btn">Request Demo / Get Quote</button>
+                <img class="product-img" src="2.jpg" alt="Animation Clips">
+                <div class="details">
+                    <h4>Animation Clips</h4>
+                    <p>We create 2D/3D animations with human and robotic voiceovers for business promotion.</p>
+                    <button class="btn">Request Demo / Get Quote</button>
+                </div>
             </div>
 
-            <div class="grid-item">
-                <img src="services5.png" alt="Missed Call Service">
-                <h3>Missed Call Service</h3>
-                <p>Reliable missed call alerts service at an economic price with full data security.</p>
-                <button class="btn">Request Demo / Get Quote</button>
-            </div>
+            <div class="grid-item-rev">
+                <img class="product-img" src="54.jpg" alt="Advanced Hosting">
+                <div class="details">
 
-            <div class="grid-item">
-                <img src="1.png" alt="WhatsApp Promotion Panel">
-                <h3>WhatsApp Promotion Panel</h3>
-                <p>Best-in-class WhatsApp panel for business promotion and customer communication.</p>
-                <button class="btn">Request Demo / Get Quote</button>
-            </div>
-
-            <div class="grid-item">
-                <img src="2.jpg" alt="Animation Clips">
-                <h3>Animation Clips</h3>
-                <p>We create 2D/3D animations with human and robotic voiceovers for business promotion.</p>
-                <button class="btn">Request Demo / Get Quote</button>
-            </div>
-
-            <div class="grid-item">
-                <img src="54.jpg" alt="Advanced Hosting">
-                <h3>Advanced Hosting</h3>
-                <p>High-speed hosting on advanced servers for a seamless customer experience.</p>
-                <button class="btn">Request Demo / Get Quote</button>
+                    <h4>Advanced Hosting</h4>
+                    <p>High-speed hosting on advanced servers for a seamless customer experience.</p>
+                    <button class="btn">Request Demo / Get Quote</button>
+                </div>
             </div>
         </div>
     </section>
+    <div class="row">
+        <div>
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d869.0738733458433!2d76.96670282916575!3d29.39091066737639!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390dda4c8dc14293%3A0x2c28e6b0480fc6a1!2sRailway%20Rd%2C%20Panipat%2C%20Haryana%20132103!5e0!3m2!1sen!2sin!4v1591763711687!5m2!1sen!2sin"
+                frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+
+        </div>
+        <div class="contact-section">
+            <div class="section-title-white">
+                <h2>CONTACT</h2>
+                <div class="details">
+                    <p>For any kind of query, contact us with the details below.</p>
+                    <ul>
+                        <li><i class="fa fa-phone-volume"></i>+91-7015574125</li>
+                        <li><i class="fa fa-envelope"></i>andisoftwaresolutions@gmail.com</li>
+                        <li><i class="fa fa-map-marker"></i> <b>ANDi Software Solutions</b> Panipat &amp; Noida
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="social">
+                <h2>Follow us :</h2>
+                <!-- FontAwesome Social Media Links -->
+                <a href="https://www.facebook.com/Andi-Software-Solutions-100644611294859/" target="_blank">
+                    <i class="fab fa-facebook" style="color: #000; font-size:1.5rem;"></i>
+                </a>
+                <a href="https://www.instagram.com/andisoftwaresolutions5/?hl=en" target="_blank">
+                    <i class="fab fa-instagram" style="color: #000; font-size:1.5rem;"></i>
+                </a>
+                <a href="https://www.youtube.com/channel/UC0mfGwSDteVVWqmggE3MtYQ" target="_blank">
+                    <i class="fab fa-youtube" style="color: #000; font-size:1.5rem;"></i>
+                </a>
+                <a href="https://in.pinterest.com/andisoftwaresolutions/" target="_blank">
+                    <i class="fab fa-pinterest" style="color: #000; font-size:1.5rem;"></i>
+                </a>
+                <a href="https://andisoftwaresolutions.tumblr.com/" target="_blank">
+                    <i class="fab fa-tumblr" style="color: #000; font-size:1.5rem;"></i>
+                </a>
+                <a href="https://www.linkedin.com/company/andisoftwaresolutions" target="_blank">
+                    <i class="fab fa-linkedin" style="color: #000; font-size:1.5rem;"></i>
+                </a>
+                <a href="https://www.reddit.com/user/ANDIsoftsol" target="_blank">
+                    <i class="fab fa-reddit" style="color: #000; font-size:1.5rem;"></i>
+                </a>
+                <a href="https://www.flickr.com/people/andi_software_solutions/" target="_blank">
+                    <i class="fab fa-flickr" style="color: #000; font-size:1.5rem;"></i>
+                </a>
+
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Hamburger Menu Toggle
+        function toggleMenu() {
+            const navLinks = document.querySelector('.nav-links');
+            navLinks.classList.toggle('active');
+        }
+    </script>
 </body>
 
 </html>
